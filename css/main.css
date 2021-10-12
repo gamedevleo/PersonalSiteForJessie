@@ -78,9 +78,33 @@ html body .container .person-profile .copyrights {
   font-size: 0.6rem;
 }
 
-html body .container .person-home {
+html body .container .person-content-area {
   width: 65%;
   background-color: #222;
   border-radius: 1.25rem;
+}
+
+html body .container .person-content-area .person-homepage {
+  position: relative;
+}
+
+html body .container .person-content-area .person-homepage .person-homepage-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+html body .container .person-content-area .person-homepage .person-homepage-wrapper .subtitle2 {
+  display: none;
+}
+
+html body .container .person-content-area .person-homepage .person-homepage-wrapper .display-none {
+  display: none;
+}
+
+html body .container .person-content-area .person-homepage .person-homepage-wrapper .animate__animated {
+  display: block;
+  animation-duration: 2s;
 }
 /*# sourceMappingURL=main.css.map */

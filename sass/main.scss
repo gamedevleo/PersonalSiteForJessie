@@ -72,10 +72,32 @@ html {
           font-size: 0.6rem;
         }
       }
-      .person-home {
+      .person-content-area {
         width: 65%;
         background-color: #222;
         border-radius: 1.25rem;
+
+        .person-homepage {
+          position: relative;
+
+          .person-homepage-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .subtitle2 {
+              display: none;
+            }
+            .display-none {
+              display: none;
+            }
+            .animate__animated {
+              display: block;
+              animation-duration: 2s;
+            }
+          }
+        }
       }
     }
   }
