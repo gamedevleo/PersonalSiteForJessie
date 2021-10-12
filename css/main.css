@@ -30,4 +30,57 @@ html body .container {
   background-color: #444;
   box-shadow: 0 0 100px 5px black;
 }
+
+html body .container .person-profile {
+  position: relative;
+  width: 35%;
+  background-color: #444;
+}
+
+html body .container .person-profile .img-fluid {
+  border: 2px solid #f7f7f7;
+}
+
+html body .container .person-profile .list-group-item {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  width: 35px;
+  height: 35px;
+}
+
+html body .container .person-profile .list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+html body .container .person-profile .list-group-item a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5f5f5;
+}
+
+html body .container .person-profile .person-profile-download a {
+  color: beige;
+}
+
+html body .container .person-profile .person-profile-download a:hover {
+  background-color: white;
+  color: aqua;
+}
+
+html body .container .person-profile .copyrights {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.6rem;
+}
+
+html body .container .person-home {
+  width: 65%;
+  background-color: #222;
+  border-radius: 1.25rem;
+}
 /*# sourceMappingURL=main.css.map */
