@@ -12,12 +12,16 @@ document.addEventListener('mousemove',e=>{
 const subtitle1El = document.querySelector(".subtitle1");
 const subtitle2El =document.querySelector(".subtitle2");
 
-setInterval(() => {
+const toggleAnimationClass = () => {
   subtitle1El.classList.toggle("animate__animated");
   subtitle1El.classList.add("display-none")
   
   setTimeout(() => {
     subtitle2El.classList.toggle("animate__animated");
   }, 3000);
-}, 3000);
+
+  setTimeout(toggleAnimationClass, 3000);
+};
+
+toggleAnimationClass();
 
