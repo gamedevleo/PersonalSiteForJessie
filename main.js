@@ -9,6 +9,7 @@ document.addEventListener('mousemove',e=>{
 })
 
 
+// Homepage Animation
 const subtitle1El = document.querySelector(".subtitle1");
 const subtitle2El =document.querySelector(".subtitle2");
 
@@ -25,3 +26,8 @@ const toggleAnimationClass = () => {
 
 toggleAnimationClass();
 
+// Bootstrap Navbar tooltips js code
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+})

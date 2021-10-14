@@ -100,5 +100,33 @@ html {
         }
       }
     }
+
+    .navbar {
+      position: absolute;
+      left: 88%;
+      top: 12%;
+
+      .list-group {
+        background-color: #444;
+
+        .list-group-item {
+          background-color: rgba(0, 0, 0, 0);
+          border: none;
+          padding: 0.4rem 0.8rem;
+
+          a {
+            text-decoration: none;
+
+            span {
+              font-size: 1rem;
+              color: #b5b6b7;
+              &:hover {
+                color: #04b4e0;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

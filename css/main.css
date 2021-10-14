@@ -107,4 +107,33 @@ html body .container .person-content-area .person-homepage .person-homepage-wrap
   display: block;
   animation-duration: 2s;
 }
+
+html body .navbar {
+  position: absolute;
+  left: 88%;
+  top: 12%;
+}
+
+html body .navbar .list-group {
+  background-color: #444;
+}
+
+html body .navbar .list-group .list-group-item {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0.4rem 0.8rem;
+}
+
+html body .navbar .list-group .list-group-item a {
+  text-decoration: none;
+}
+
+html body .navbar .list-group .list-group-item a span {
+  font-size: 1rem;
+  color: #b5b6b7;
+}
+
+html body .navbar .list-group .list-group-item a span:hover {
+  color: #04b4e0;
+}
 /*# sourceMappingURL=main.css.map */
