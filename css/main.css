@@ -15,6 +15,18 @@ html body {
   height: 100vh;
 }
 
+html body .display-none {
+  display: none;
+}
+
+html body .bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #04b4e0;
+}
+
+html body .tooltip-inner {
+  background: #04b4e0;
+}
+
 html body .lm-animated-bg {
   position: absolute;
   width: 100%;
@@ -22,7 +34,7 @@ html body .lm-animated-bg {
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
+  z-index: -4;
 }
 
 html body .container {
@@ -35,6 +47,25 @@ html body .container .person-profile {
   position: relative;
   width: 35%;
   background-color: #444;
+  z-index: 1;
+}
+
+html body .container .person-profile .person-profile-imagewrapper {
+  position: relative;
+}
+
+html body .container .person-profile .person-profile-imagewrapper::after {
+  position: absolute;
+  opacity: 0.3;
+  top: 7%;
+  left: 7%;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-image: -webkit-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+  background-size: 5px 5px;
+  z-index: -1;
 }
 
 html body .container .person-profile .img-fluid {
@@ -80,6 +111,7 @@ html body .container .person-profile .copyrights {
 
 html body .container .person-content-area {
   width: 65%;
+  height: 100%;
   background-color: #222;
   border-radius: 1.25rem;
 }
@@ -99,13 +131,82 @@ html body .container .person-content-area .person-homepage .person-homepage-wrap
   display: none;
 }
 
-html body .container .person-content-area .person-homepage .person-homepage-wrapper .display-none {
-  display: none;
-}
-
 html body .container .person-content-area .person-homepage .person-homepage-wrapper .animate__animated {
   display: block;
   animation-duration: 2s;
+}
+
+html body .container .person-content-area .person-aboutMe {
+  z-index: 0;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-header h1 {
+  z-index: 1;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-header h1 span {
+  position: relative;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-header h1 span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 88%;
+  height: 65%;
+  content: "";
+  background-image: -webkit-repeating-radial-gradient(center center, #04b4e0 0px, #04b4e0 1px, transparent 0px, transparent 100%);
+  background-size: 6px 6px;
+  z-index: -1;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-header .person-aboutMe-header-content p {
+  width: 60%;
+  height: 100%;
+  padding: 8px 0;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-header .person-aboutMe-header-content .list-group {
+  width: 40%;
+  height: 100%;
+  padding: 0;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-header .person-aboutMe-header-content .list-group .list-group-item {
+  color: #fff;
+  background-color: #0000;
+  border: none;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-whatIdo {
+  margin-top: 50px;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-whatIdo h2 span {
+  position: relative;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-whatIdo h2 span::after {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  width: 60%;
+  height: 50%;
+  content: "";
+  background-image: -webkit-repeating-radial-gradient(center center, #04b4e0 0px, #04b4e0 1px, transparent 0px, transparent 100%);
+  background-size: 6px 6px;
+  z-index: -1;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-whatIdo .person-aboutMe-whatIdo-content .lnr {
+  font-size: 3rem;
+  color: #04b4e0;
+  margin-top: 1rem;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-whatIdo .person-aboutMe-whatIdo-content h3 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
 }
 
 html body .navbar {
@@ -126,6 +227,10 @@ html body .navbar .list-group .list-group-item {
 
 html body .navbar .list-group .list-group-item a {
   text-decoration: none;
+}
+
+html body .navbar .list-group .list-group-item a .active {
+  color: #04b4e0;
 }
 
 html body .navbar .list-group .list-group-item a span {

@@ -5,7 +5,7 @@ document.addEventListener('mousemove',e=>{
   let x = e.clientX;
   let y = e.clientY;
 
-  bgEl.style.setProperty("background-position","calc( 50% + " + x*-0.005 + "px ) calc( 50% + " + y*-0.005 + "px )");
+  bgEl.style.setProperty("background-position","calc( 50% + " + x*-0.008 + "px ) calc( 50% + " + y*-0.008 + "px )");
 })
 
 
@@ -30,4 +30,13 @@ toggleAnimationClass();
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl);
+})
+
+var navItems = document.querySelectorAll("html body .navbar .list-group .list-group-item");
+
+navItems.forEach(item=>{
+  item.addEventListener("click",()=>{
+    navItems.forEach(each=> each.firstElementChild.firstElementChild.classList.remove("active"));
+    item.firstElementChild.firstElementChild.classList.add("active");
+  })
 })
