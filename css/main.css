@@ -209,6 +209,78 @@ html body .container .person-content-area .person-aboutMe .person-aboutMe-whatId
   padding: 1rem 0;
 }
 
+html body .container .person-content-area .person-aboutMe .person-aboutMe-testimonials .person-aboutMe-testimonials-header h3 {
+  position: relative;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-testimonials .person-aboutMe-testimonials-header h3::after {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  width: 20%;
+  height: 50%;
+  content: "";
+  background-image: -webkit-repeating-radial-gradient(center center, #04b4e0 0px, #04b4e0 1px, transparent 0px, transparent 100%);
+  background-size: 6px 6px;
+  z-index: -1;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-testimonials .person-aboutMe-testimonials-header button {
+  color: #fff;
+  background-color: #444;
+  border: none;
+  border-radius: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.3rem;
+  box-shadow: 0 0 2px #ccc;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-testimonials .person-aboutMe-testimonials-header button:hover {
+  background-color: #04b4e0;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-testimonials .person-aboutMe-testimonials-content {
+  white-space: nowrap;
+  -ms-scrollbar: none;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-testimonials .person-aboutMe-testimonials-content::-webkit-scrollbar {
+  display: none;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-testimonials .person-aboutMe-testimonials-content .card {
+  scroll-snap-align: start;
+  position: relative;
+  display: inline-block;
+  margin-top: 3rem;
+  width: 49.5%;
+  height: 100%;
+  background-color: #0000;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-testimonials .person-aboutMe-testimonials-content .card .card-img-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 30%;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-testimonials .person-aboutMe-testimonials-content .card .card-body {
+  padding-top: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+html body .container .person-content-area .person-aboutMe .person-aboutMe-testimonials .person-aboutMe-testimonials-content .card .card-text {
+  white-space: normal;
+}
+
 html body .navbar {
   position: absolute;
   left: 88%;
