@@ -105,7 +105,7 @@ html body .container .person-profile .person-profile-download a:hover {
 
 html body .container .person-profile .copyrights {
   position: absolute;
-  bottom: 0;
+  bottom: 1rem;
   font-size: 0.6rem;
 }
 
@@ -484,6 +484,34 @@ html body .container .person-content-area .person-aboutMe .person-aboutMe-funFac
 html body .container .person-content-area .person-aboutMe .person-aboutMe-funFacts .person-aboutMe-funFacts-content .card .card-body .card-text {
   font-size: 2rem;
   color: #ccc;
+}
+
+html body .container .person-content-area .person-resume .person-resume-content .timepoint {
+  position: relative;
+}
+
+html body .container .person-content-area .person-resume .person-resume-content .timepoint::before {
+  position: absolute;
+  top: 5%;
+  left: 98%;
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: #000;
+  content: "";
+  border: 0.1rem solid #04b4e0;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+html body .container .person-content-area .person-resume .person-resume-content .timepoint::after {
+  position: absolute;
+  top: 4.5%;
+  left: 97%;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: #04b4e09f;
+  content: "";
+  border-radius: 50%;
 }
 
 html body .navbar {
