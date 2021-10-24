@@ -1,0 +1,55 @@
+.content-area {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  max-width: calc(100% - 380px);
+  background-color: transparent;
+  .animated-sections {
+    position: relative;
+    height: 100%;
+    perspective: 1500px;
+    backface-visibility: hidden;
+    .animated-section {
+      position: absolute;
+      background-color: #222;
+      height: 100%;
+      width: 100%;
+      border-radius: 30px;
+      padding: 60px;
+      opacity: 0;
+      overflow: auto;
+      visibility: hidden;
+      backface-visibility: hidden;
+      transform: translate3d(0, 0, 0);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      color: $text-color-white;
+      .vcentered {
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          font-size: 46px;
+          font-weight: 600;
+        }
+        p {
+          color: $color-grey;
+        }
+        .display-none {
+          display: none;
+        }
+      }
+    }
+    .section-active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 99;
+    }
+  }
+}

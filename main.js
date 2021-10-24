@@ -7,9 +7,10 @@ $(document).ready(()=>{
   })
   // Homepage Animation
   const toggleAnimationClass= () => {
-    $('.subtitle1').toggleClass('animate__animated').add("display-none");
+    $('.subtitle1').toggleClass('animate__animated');
     setTimeout(() => {
-      $('.subtitle2').toggleClass('animate__animated');
+      $('.subtitle1').toggleClass('display-none');
+      $('.subtitle2').toggleClass('animate__animated display-none');
     }, 3000);
     setTimeout(toggleAnimationClass, 3000);
   }

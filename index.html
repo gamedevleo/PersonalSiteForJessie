@@ -20,354 +20,457 @@
   <script src="https://kit.fontawesome.com/98f3f63776.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/app.css">
   <title>Jessie Liu | Full Stack Developer ©</title>
 </head>
 <body class="d-flex justify-content-center align-items-center">
   <!-- Background Image -->
   <div class="lm-animated-bg">
   </div>
-  <nav class="navbar">
-    <ul class="list-group list-group-flush rounded-pill">
-      <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Home">
-        <a href="#">
-          <span class="lnr lnr-home"></span>
-        </a>
-      </li>
-      <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="About me">
-        <a href="#">
-          <span class="lnr lnr-user"></span>
-        </a>
-      </li>
-      <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Resume">
-        <a href="#">
-          <span class="lnr lnr-graduation-hat"></span>
-        </a>
-      </li>
-      <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Portfolio">
-        <a href="#">
-          <span class="lnr lnr-briefcase"></span>
-        </a>
-      </li>
-      <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Blog">
-        <a href="#">
-          <span class="lnr lnr-book"></span>
-        </a>
-      </li>
-      <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Contact">
-        <a href="#">
-          <span class="lnr lnr-envelope"></span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <div class="container d-flex h-75 w-75 p-0 overflow-hidden">
-    <!-- Person Profile -->
-    <section class="person-profile d-flex flex-column px-1 py-5 align-items-center">
-      <div class="person-profile-imagewrapper mb-3 text-center">
-        <img src="https://randomuser.me/api/portraits/women/11.jpg" class="img-fluid rounded-circle p-1"
-          alt="Jessie Liu" />
-      </div>
-
-      <div class="person-titles text-center text-white">
-        <h1 class="fw-bold h3">
-          Jessie Liu
-        </h1>
-        <p class="text-secondary">Full Stack Developer</p>
-      </div>
-
-      <div class="person-socialmedia mb-3">
-        <ul class="list-group list-group-horizontal">
-          <li class="list-group-item text-center">
-            <a href="#">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-          <li class="list-group-item text-center">
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="list-group-item text-center">
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="person-profile-download">
-        <a href="./download/Resume - Hanyan Liu .pdf" class="btn border border-white rounded-pill px-4" download>
-          Download CV
-        </a>
-      </div>
-      <div class="copyrights">
-        <footer class="text-center text-white ">
+  <!-- whole page -->
+  <div class="page">
+    <div class="page-content">
+      <!-- header -->
+      <header class="site-header">
+        <div class="header-content">
+          <div class="header-photo">
+            <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="Jessie Liu">
+          </div>
+          <div class="header-titles">
+            <h2>Jessie Liu</h2>
+            <h4>Full Stack Developer</h4>
+          </div>
+        </div>
+        <nav class="navbar">
+          <ul class="list-group list-group-flush rounded-pill">
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Home">
+              <a href="#">
+                <span class="lnr lnr-home"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="About me">
+              <a href="#">
+                <span class="lnr lnr-user"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Resume">
+              <a href="#">
+                <span class="lnr lnr-graduation-hat"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Portfolio">
+              <a href="#">
+                <span class="lnr lnr-briefcase"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Blog">
+              <a href="#">
+                <span class="lnr lnr-book"></span>
+              </a>
+            </li>
+            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="left" title="Contact">
+              <a href="#">
+                <span class="lnr lnr-envelope"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-links mb-3">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item text-center">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="list-group-item text-center">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-group-item text-center">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="profile-download">
+          <a href="./download/Resume - Hanyan Liu .pdf" class="btn border border-white rounded-pill px-4" download>
+            Download CV
+          </a>
+        </div>
+        <footer class='copyrights'>
           ©2021 All rights reserved.
         </footer>
+      </header>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-
-    </section>
-    <!-- Content Area -->
-    <div class="person-content-area d-flex justify-content-center align-items-center">
-      <!-- HomePage -->
-      <section class="person-homepage w-100 h-100 p-5">
-        <div class="person-homepage-wrapper">
-          <h1 class="text-white text-center fw-bold">Jessie Liu</h1>
-          <p class="subtitle1 animated__animated animate__zoomIn text-secondary text-center ">Full Stack Developer</p>
-          <p class="subtitle2 animate__zoomIn text-secondary text-center ">Web Developer</p>
+      <div class="arrows-nav">
+        <div class="arrow-right">
+          <i class="lnr lnr-chevron-right"></i>
         </div>
-      </section>
-      <section class="person-aboutMe display-none p-5 w-100 h-100 overflow-auto ">
-        <div class="person-aboutMe-header">
-          <h2 class="text-white text-start mb-4 h1">About <span class="text-info">Me</span></h2>
-          <div class="person-aboutMe-header-content text-white d-flex">
-            <p class="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, architecto doloribus? Quae laboriosam
-              delectus doloribus et molestias autem, commodi illum, quos ipsam optio obcaecati tempora reiciendis modi
-              error aspernatur excepturi deserunt nemo veniam praesentium maiores voluptate? Natus numquam quaerat
-              cupiditate.
-            </p>
-            <ul class="list-group">
-              <li class="list-group-item">
-                <span class="text-info">Age</span> 32
-              </li>
-              <li class="list-group-item">
-                <span class="text-info">Residence</span> AU
-              </li>
-              <li class="list-group-item">
-                <span class="text-info">Address</span> Sydney,NSW
-              </li>
-              <li class="list-group-item">
-                <span class="text-info">e-mail</span> email@example.com
-              </li>
-              <li class="list-group-item">
-                <span class="text-info">Phone</span> +0123 123 456 789
-              </li>
-            </ul>
-          </div>
+        <div class="arrow-left">
+          <i class="lnr lnr-chevron-left"></i>
         </div>
-        <div class="person-aboutMe-whatIdo">
-          <h2 class="text-white">What<span class="text-info"> I Do</span></h2>
-          <div class="person-aboutMe-whatIdo-content d-flex flex-wrap">
-            <div class="text-white ps-0 pe-3 w-50">
-              <span class="lnr lnr-store"></span>
-              <h3>E-commerce</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores itaque voluptatum cumque minima
-                perspiciatis impedit maiores quos, nemo assumenda.
-              </p>
+      </div>
+      <div class="content-area">
+        <div class="animated-sections">
+          <section class="animated-section home" >
+            <div class="section-content vcentered">
+              <h1 class="">Jessie Liu</h1>
+              <p class="subtitle1 animate__zoomIn">Full Stack Developer</p>
+              <p class="subtitle2 animate__zoomIn display-none">Web Developer</p>
             </div>
-            <div class="text-white ps-0 pe-3 w-50">
-              <span class="lnr lnr-pencil"></span>
-              <h3>Copywriting</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quo sed earum corporis ipsum hic qui nulla
-                dolores, incidunt repellat?
-              </p>
-            </div>
-            <div class="text-white ps-0 pe-3 w-50">
-              <span class="lnr lnr-laptop-phone"></span>
-              <h3>Web Design</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quo sed earum corporis ipsum hic qui nulla
-                dolores, incidunt repellat?
-              </p>
-            </div>
-            <div class="text-white ps-0 pe-3 w-50">
-              <span class="lnr lnr-flag"></span>
-              <h3>Management</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quo sed earum corporis ipsum hic qui nulla
-                dolores, incidunt repellat?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="person-aboutMe-testimonials mt-5">
-          <div class="person-aboutMe-testimonials-header d-flex justify-content-between text-white">
-            <h3>Testimonials</h3>
-            <div class="button-wrapper">
-              <button><span class="lnr lnr-chevron-left"></span></button>
-              <button><span class="lnr lnr-chevron-right"></span></button>
-            </div>
-          </div>
-          <div class="person-aboutMe-testimonials-content overflow-scroll">
-            <div class="card text-center text-white">
-              <img class="card-img-top" src="https://randomuser.me/api/portraits/women/6.jpg" alt="">
-              <div class="card-body text-start">
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum, velit
-                  quisquam enim quidem deserunt quod! Repudiandae sed fugit enim!
+          </section>
+          <section class="animated-section about-me container">
+            <div class="about-me-header row mb-3">
+              <h2 class="col-12 text-white text-start mb-4 h1">About <span class="text-info">Me</span></h2>
+              <div class="row">
+                <p class="col-lg-8">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, architecto doloribus? Quae laboriosam
+                  delectus doloribus et molestias autem, commodi illum, quos ipsam optio obcaecati tempora reiciendis modi
+                  error aspernatur excepturi deserunt nemo veniam praesentium maiores voluptate? Natus numquam quaerat
+                  cupiditate.
                 </p>
-                <div class="d-flex justify-content-between">
-                  <div>
-                    <h4 class="card-title">Julia Hickman</h4>
-                    <p class="text-secondary">Omni Source</p>
-                  </div>
-                  <i class="fas fa-quote-right h2 mt-3 text-info"></i>
+                <ul class="col-lg-4 list-group">
+                  <li class="list-group-item">
+                    <span class="text-info">Age</span> 32
+                  </li>
+                  <li class="list-group-item">
+                    <span class="text-info">Residence</span> AU
+                  </li>
+                  <li class="list-group-item">
+                    <span class="text-info">Address</span> Sydney,NSW
+                  </li>
+                  <li class="list-group-item">
+                    <span class="text-info">e-mail</span> email@example.com
+                  </li>
+                  <li class="list-group-item">
+                    <span class="text-info">Phone</span> +0123 123 456 789
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row about-me-whatIdo">
+              <h2 class="col-12 text-white">What<span class="text-info"> I Do</span></h2>
+              <div class="row">
+                <div class="col-lg-6">
+                  <span class="lnr lnr-store"></span>
+                  <h3>E-commerce</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores itaque voluptatum cumque minima
+                    perspiciatis impedit maiores quos, nemo assumenda.
+                  </p>
+                </div>
+                <div class="col-lg-6">
+                  <span class="lnr lnr-pencil"></span>
+                  <h3>Copywriting</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quo sed earum corporis ipsum hic qui nulla
+                    dolores, incidunt repellat?
+                  </p>
+                </div>
+                <div class="col-lg-6">
+                  <span class="lnr lnr-laptop-phone"></span>
+                  <h3>Web Design</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quo sed earum corporis ipsum hic qui nulla
+                    dolores, incidunt repellat?
+                  </p>
+                </div>
+                <div class="col-lg-6">
+                  <span class="lnr lnr-flag"></span>
+                  <h3>Management</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quo sed earum corporis ipsum hic qui nulla
+                    dolores, incidunt repellat?
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="card text-center text-white">
-              <img class="card-img-top" src="https://randomuser.me/api/portraits/men/8.jpg" alt="">
-              <div class="card-body text-start">
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum, velit
-                  quisquam enim quidem deserunt quod! Repudiandae sed fugit enim!
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div>
-                    <h4 class="card-title">Robert Watkins</h4>
-                    <p class="text-secondary">Endicott Shoes</p>
-                  </div>
-                  <i class="fas fa-quote-right h2 mt-3 text-info"></i>
+            <div class="about-me-testimonials mt-5">
+              <div class="d-flex justify-content-between">
+                <h3>Testimonials</h3>
+                <div>
+                  <button><span class="lnr lnr-chevron-left"></span></button>
+                  <button class="ms-2"><span class="lnr lnr-chevron-right"></span></button>
                 </div>
               </div>
-            </div>
-            <div class="card text-center text-white">
-              <img class="card-img-top" src="https://randomuser.me/api/portraits/women/4.jpg" alt="">
-              <div class="card-body text-start">
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum, velit
-                  quisquam enim quidem deserunt quod! Repudiandae sed fugit enim!
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div>
-                    <h4 class="card-title">Kristin Carroll</h4>
-                    <p class="text-secondary">Helping Hand</p>
-                  </div>
-                  <i class="fas fa-quote-right h2 mt-3 text-info"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="person-aboutMe-clients mt-5">
-          <div class="person-aboutMe-clients-header d-flex justify-content-between text-white">
-            <h3>Clients</h3>
-            <div class="button-wrapper">
-              <button><span class="lnr lnr-chevron-left"></span></button>
-              <button><span class="lnr lnr-chevron-right"></span></button>
-            </div>
-          </div>
-          <div class="person-aboutMe-clients-content overflow-scroll">
-            <a class="img-wrapper" href="">
-              <img src="./images/clients/client-1.png" alt="">
-            </a>
-            <a href="" class="img-wrapper">
-              <img src="./images/clients/client-2.png" alt="">
-            </a>
-            <a href="" class="img-wrapper">
-              <img src="./images/clients/client-3.png" alt="">
-            </a>
-            <a href="" class="img-wrapper">
-              <img src="./images/clients/client-4.png" alt="">
-            </a>
-            <a href="" class="img-wrapper">
-              <img src="./images/clients/client-5.png" alt="">
-            </a>
-            <a href="" class="img-wrapper">
-              <img src="./images/clients/client-6.png" alt="">
-            </a>
-            <a href="" class="img-wrapper">
-              <img src="./images/clients/client-7.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="person-aboutMe-pricing text-white">
-          <h3>
-            Pricing
-          </h3>
-          <div class="person-aboutMe-pricing-content text-secondary d-flex">
-            <div class="person-aboutMe-pricing-content-left text-center">
-              <h4 class="mb-4 text-white">
-                Silver
-              </h4>
-              <h5 class="h1 text-white">$64</h5>
-              <p>per month</p>
-              <button class="btn btn-secondary rounded-pill m-3">Free Trial</button>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, fuga?</p>
-            </div>
-            <div class="person-aboutMe-pricing-content-right text-center">
-              <h4 class="mb-4 text-white">
-                Gold
-              </h4>
-              <h5 class="h1 text-white">$128</h5>
-              <p>per month</p>
-              <button class="btn btn-secondary rounded-pill m-3">Free Trial</button>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eius veritatis dicta?</p>
-            </div>
-          </div>
-        </div>
-        <div class="person-aboutMe-funFacts">
-          <h3>Fun <span class="text-info">Facts</span></h3>
-          <div class="person-aboutMe-funFacts-content">
-            <div class="card text-center">
-              <span class="lnr lnr-heart"></span>
-              <div class="card-body">
-                <h4 class="card-title">Happy Clients</h4>
-                <p class="card-text">578</p>
-              </div>
-            </div>
-            <div class="card text-center">
-              <span class="lnr lnr-clock"></span>
-              <div class="card-body">
-                <h4 class="card-title">Working hours</h4>
-                <p class="card-text">4,780</p>
-              </div>
-            </div>
-            <div class="card text-center">
-              <span class="lnr lnr-star"></span>
-              <div class="card-body">
-                <h4 class="card-title">Awards Won</h4>
-                <p class="card-text">15</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="person-resume display-none w-100 h-100 p-5 overflow-scroll">
-        <h2 class="text-white text-start">Resume</h2>
-        <div class="person-resume-content text-white">
-          <div class="person-resume-left w-50">
-            <div class="person-resume-left-education">
-              <h3>Education</h3>
-              <div class="education-content overflow-hidden">
-                <div class="frontend-development d-flex">
-                  <div class="text-end timepoint border-end pe-1">
-                    <h4 class="h6">2008</h4>
-                    <h5 class="h6 fw-light">University Of Studies</h5>
-                  </div>
-                  <div class="ps-1">
-                    <h4 class="h6">Frontend Development</h4>
-                    <p class="fs-6 fw-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, exercitationem.</p>
+              <div class="about-me-testimonials-content overflow-scroll">
+                <div class="card text-center text-white">
+                  <img class="card-img-top" src="https://randomuser.me/api/portraits/women/6.jpg" alt="">
+                  <div class="card-body text-start">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum, velit
+                      quisquam enim quidem deserunt quod! Repudiandae sed fugit enim!
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h4 class="card-title">Julia Hickman</h4>
+                        <p class="text-secondary">Omni Source</p>
+                      </div>
+                      <i class="fas fa-quote-right h2 mt-3 text-info"></i>
+                    </div>
                   </div>
                 </div>
-                <div class="graphic-design d-flex">
-                  <div class="text-end border-end timepoint pe-1">
-                    <h4 class="h6">2007</h4>
-                    <h5 class="h6 fw-light">University Of Studies</h5>
+                <div class="card text-center text-white">
+                  <img class="card-img-top" src="https://randomuser.me/api/portraits/men/8.jpg" alt="">
+                  <div class="card-body text-start">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum, velit
+                      quisquam enim quidem deserunt quod! Repudiandae sed fugit enim!
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h4 class="card-title">Robert Watkins</h4>
+                        <p class="text-secondary">Endicott Shoes</p>
+                      </div>
+                      <i class="fas fa-quote-right h2 mt-3 text-info"></i>
+                    </div>
                   </div>
-                  <div class="ps-1">
-                    <h4 class="h6">Graphic Design</h4>
-                    <p class="fs-6 fw-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, exercitationem.</p>
+                </div>
+                <div class="card text-center text-white">
+                  <img class="card-img-top" src="https://randomuser.me/api/portraits/women/4.jpg" alt="">
+                  <div class="card-body text-start">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum, velit
+                      quisquam enim quidem deserunt quod! Repudiandae sed fugit enim!
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h4 class="card-title">Kristin Carroll</h4>
+                        <p class="text-secondary">Helping Hand</p>
+                      </div>
+                      <i class="fas fa-quote-right h2 mt-3 text-info"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="person-resume-left-experience">
+            <div class="about-me-clients">
+              <div class="about-me-clients-header d-flex justify-content-between text-white">
+                <h3>Clients</h3>
+                <div class="button-wrapper">
+                  <button><span class="lnr lnr-chevron-left"></span></button>
+                  <button><span class="lnr lnr-chevron-right"></span></button>
+                </div>
+              </div>
+              <div class="about-me-clients-content overflow-scroll">
+                <a class="img-wrapper" href="">
+                  <img src="./images/clients/client-1.png" alt="">
+                </a>
+                <a href="" class="img-wrapper">
+                  <img src="./images/clients/client-2.png" alt="">
+                </a>
+                <a href="" class="img-wrapper">
+                  <img src="./images/clients/client-3.png" alt="">
+                </a>
+                <a href="" class="img-wrapper">
+                  <img src="./images/clients/client-4.png" alt="">
+                </a>
+                <a href="" class="img-wrapper">
+                  <img src="./images/clients/client-5.png" alt="">
+                </a>
+                <a href="" class="img-wrapper">
+                  <img src="./images/clients/client-6.png" alt="">
+                </a>
+                <a href="" class="img-wrapper">
+                  <img src="./images/clients/client-7.png" alt="">
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="person-resume-right">
-            <div class="person-resume-right-designSkills"></div>
-            <div class="person-resume-right-codingSkills"></div>
-            <div class="person-resume-right-knowledges"></div>
-          </div>
+            <div class="about-me-pricing text-white">
+              <h3>
+                Pricing
+              </h3>
+              <div class="about-me-pricing-content row d-flex">
+                <div class="about-me-pricing-content-left col-lg-6 text-center">
+                  <h4 class="mb-4 text-white">
+                    Silver
+                  </h4>
+                  <h5 class="h1 text-white">$64</h5>
+                  <p>per month</p>
+                  <button class="btn btn-secondary rounded-pill m-3">Free Trial</button>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, fuga?</p>
+                </div>
+                <div class="about-me-pricing-content-right col-lg-6 text-center">
+                  <h4 class="mb-4 text-white">
+                    Gold
+                  </h4>
+                  <h5 class="h1 text-white">$128</h5>
+                  <p>per month</p>
+                  <button class="btn btn-secondary rounded-pill m-3">Free Trial</button>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eius veritatis dicta?</p>
+                </div>
+              </div>
+            </div>
+            <div class="about-me-funFacts">
+              <h3>Fun <span class="text-info">Facts</span></h3>
+              <div class="row about-me-funFacts-content">
+                <div class="card col-lg-4 text-center">
+                  <span class="lnr lnr-heart"></span>
+                  <div class="card-body">
+                    <h4 class="card-title">Happy Clients</h4>
+                    <p class="card-text">578</p>
+                  </div>
+                </div>
+                <div class="card col-lg-4 text-center">
+                  <span class="lnr lnr-clock"></span>
+                  <div class="card-body">
+                    <h4 class="card-title">Working hours</h4>
+                    <p class="card-text">4,780</p>
+                  </div>
+                </div>
+                <div class="card col-lg-4 text-center">
+                  <span class="lnr lnr-star"></span>
+                  <div class="card-body">
+                    <h4 class="card-title">Awards Won</h4>
+                    <p class="card-text">15</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="animated-section section-active resume container ">
+            <div class="row">
+              <h2>Resume</h2>
+            </div>
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="education">
+                  <h3>Education</h3>
+                <div class="d-flex">
+                  <div class="time-line">
+                    <h4>2008</h4>
+                    <p>University of Studies</p>
+                  </div>
+                  <div class="subjects">
+                    <h4>Frontend Development</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="time-line">
+                    <h4>2007</h4>
+                    <p>University of Studies</p>
+                  </div>
+                  <div class="subjects">
+                    <h4>Frontend Development</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?</p>
+                  </div>
+                </div>
+                </div>
+                <div class="experience">
+                  <h3>Experience</h3>
+                  <div class="d-flex">
+                    <div class="time-line">
+                      <h4>2016 - Current</h4>
+                      <p>Google</p>
+                    </div>
+                    <div class="jobtitle">
+                      <h4>Lead UI/UX Designer</h4>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?</p>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="time-line">
+                      <h4>2013 - 2016</h4>
+                      <p>Adobe</p>
+                    </div>
+                    <div class="jobtitle">
+                      <h4>Senior UI/UX Designer</h4>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?</p>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="time-line">
+                      <h4>2011-2013</h4>
+                      <p>Google</p>
+                    </div>
+                    <div class="jobtitle">
+                      <h4>Junior UI/UX Designer</h4>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              <div class="col-sm-5">
+                <div class="design-skills">
+                  <h3>Design <span>Skills</span></h3>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="coding-skills">
+                  <h3>Coding <span>Skills</span></h3>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="knowledges">
+                  <h3>Knowledges</h3>
+                  <div class="knowledges-content">
+                    <ul class="list-group list-group-horizontal flex-wrap">
+                      <li class="list-group-item">Marketing</li>
+                      <li class="list-group-item">Print</li>
+                      <li class="list-group-item">Digital Design</li>
+                      <li class="list-group-item">Social Media</li>
+                      <li class="list-group-item">Time Management</li>
+                      <li class="list-group-item">Communication</li>
+                      <li class="list-group-item">Problem-Solving</li>
+                      <li class="list-group-item">Social Networking</li>
+                      <li class="list-group-item">Flexibility</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <h3>Certificates</h3>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="cert-logo"></div>
+                <div class="cert-content">
+                  <h4>Psychology of Internation Design</h4>
+                  <p>Membership ID:XXXX</p>
+                  <P>19 April 2018</P>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="cert-logo"></div>
+                <div class="cert-content">
+                  <h4>Psychology of Internation Design</h4>
+                  <p>Membership ID:XXXX</p>
+                  <P>19 April 2018</P>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-        <div class="person-resume-certificate">
-        </div>
-      </section>
+      </div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

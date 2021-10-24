@@ -1,0 +1,29 @@
+.arrows-nav {
+  position: absolute;
+  padding: 10px 0;
+  width: 60px;
+  right: -80px;
+  bottom: 0;
+  border-radius: 35px;
+  z-index: 98;
+  list-style: none;
+  background-color: $bg-color-grey;
+  div {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: $color-grey;
+    padding: 10px;
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .arrows-nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 48px;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px 0;
+    border: 2px solid $color-blue;
+  }
+}

@@ -1,0 +1,21 @@
+.navbar {
+  position: absolute;
+  padding: 0;
+  width: 70px;
+  top: 0;
+  right: -90px;
+  z-index: 999;
+  .list-group {
+    background-color: $bg-color-grey;
+    &-item {
+      background-color: #0000;
+      border: none;
+    }
+  }
+}
+.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #04b4e0;
+}
+.tooltip-inner {
+  background: #04b4e0;
+}

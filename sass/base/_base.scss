@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  color: $text-color-white;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  body {
+    width: 100%;
+    min-height: 100vh;
+    a {
+      text-decoration: none;
+      color: $color-grey;
+      font-size: 24px;
+      &:hover {
+        color: $color-blue;
+      }
+    }
+    i:hover {
+      color: $color-blue;
+    }
+    footer {
+      color: $text-color-white;
+      font-weight: 200;
+      margin-top: 90px;
+    }
+  }
+}

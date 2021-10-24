@@ -1,12 +1,12 @@
-@mixin dotsDecoration($top, $left, $width, $height, $color) {
+@mixin dotsDecoration($top, $left, $width, $height, $color, $border-radius) {
   &::after {
     position: absolute;
     top: $top;
     left: $left;
+    opacity: 0.4;
     height: $height;
     width: $width;
-    content: "";
-
+    content: '';
     background-image: -webkit-repeating-radial-gradient(
       center center,
       $color,
@@ -16,5 +16,10 @@
     );
     background-size: 6px 6px;
     z-index: -1;
+    border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
   }
 }

@@ -1,0 +1,100 @@
+.site-header {
+  float: left;
+  width: 100%;
+  max-width: 380px;
+  height: 100%;
+  max-height: 80vh;
+  min-height: inherit;
+  text-align: center;
+  padding: 70px 30px 0;
+  overflow: auto;
+  .header-photo {
+    position: relative;
+    width: 180px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 1;
+    @include dotsDecoration(10px, 10px, 100%, 100%, $text-color-white, 50%);
+    img {
+      border: 1px solid $text-color-white;
+      width: 100%;
+      height: 100%;
+      padding: 3px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+  }
+  .header-titles {
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      color: $text-color-white;
+      margin: 10px auto;
+      line-height: 1.2rem;
+    }
+    h4 {
+      font-size: 16px;
+      font-weight: 300;
+      color: $color-grey;
+      margin-top: 5px;
+      line-height: 1.2rem;
+    }
+  }
+  .social-links {
+    .list-group {
+      justify-content: center;
+      align-items: center;
+      &-item {
+        background-color: transparent;
+        width: 42px;
+        border: none;
+        &:hover {
+          background-color: rgba($text-color-white, 0.2);
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .profile-download {
+    a {
+      color: $text-color-white;
+      &:hover {
+        background-color: $text-color-white;
+        color: $color-blue;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .site-header {
+    position: absolute;
+    width: 100%;
+    max-width: 330px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $bg-color-grey;
+    z-index: 99;
+    padding: 30px 30px 10px;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+    overflow: auto;
+    transition: all 0.25s ease-in-out;
+  }
+}
