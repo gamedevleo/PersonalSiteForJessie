@@ -104,9 +104,7 @@
         </footer>
       </header>
       <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+        <i class="lnr lnr-menu"></i>
       </div>
       <div class="arrows-nav">
         <div class="arrow-right">
@@ -334,12 +332,12 @@
               </div>
             </div>
           </section>
-          <section class="animated-section section-active resume container ">
+          <section class="section-active animated-section resume container">
             <div class="row">
-              <h2>Resume</h2>
+              <h2 class="resume-title">Resume</h2>
             </div>
             <div class="row">
-              <div class="col-sm-7">
+              <div class="col-sm-7 resume-timeline">
                 <div class="education">
                   <h3>Education</h3>
                 <div class="d-flex">
@@ -349,7 +347,9 @@
                   </div>
                   <div class="subjects">
                     <h4>Frontend Development</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?</p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?
+                    </p>
                   </div>
                 </div>
                 <div class="d-flex">
@@ -359,7 +359,9 @@
                   </div>
                   <div class="subjects">
                     <h4>Frontend Development</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?</p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quisquam commodi incidunt nam perspiciatis autem et fugit mollitia recusandae corporis omnis perferendis distinctio nisi hic sit quidem exercitationem, sapiente culpa?
+                    </p>
                   </div>
                 </div>
                 </div>
@@ -387,7 +389,7 @@
                   </div>
                   <div class="d-flex">
                     <div class="time-line">
-                      <h4>2011-2013</h4>
+                      <h4>2011 - 2013</h4>
                       <p>Google</p>
                     </div>
                     <div class="jobtitle">
@@ -398,36 +400,30 @@
                 </div>
               </div>
                 
-              <div class="col-sm-5">
+              <div class="col-sm-5 skills">
                 <div class="design-skills">
                   <h3>Design <span>Skills</span></h3>
-                  <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
+                  <ul class="list-group list-group-horizontal flex-wrap">
+                    <li class="list-group-item">Web Design</li>
+                    <li class="list-group-item">Print Design</li>
+                    <li class="list-group-item">Logo Design</li>
+                    <li class="list-group-item">Graphic Design</li>
+                    <li class="list-group-item">Time Management</li>
+                  </ul>
                 </div>
                 <div class="coding-skills">
                   <h3>Coding <span>Skills</span></h3>
-                  <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
+                  <ul class="list-group list-group-horizontal flex-wrap">
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item">HTML/CSS</li>
+                    <li class="list-group-item">Digital Design</li>
+                    <li class="list-group-item">Bootstrap 5</li>
+                    <li class="list-group-item">React</li>
+                    <li class="list-group-item">NodeJS</li>
+                    <li class="list-group-item">AWS</li>
+                    <li class="list-group-item">Docker</li>
+                    <li class="list-group-item">Restful API</li>
+                  </ul>
                 </div>
                 <div class="knowledges">
                   <h3>Knowledges</h3>
@@ -447,24 +443,33 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row certificate">
               <h3>Certificates</h3>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="cert-logo"></div>
-                <div class="cert-content">
-                  <h4>Psychology of Internation Design</h4>
-                  <p>Membership ID:XXXX</p>
-                  <P>19 April 2018</P>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="cert-wrapper d-flex">
+                    <div class="cert-logo d-flex align-items-center">
+                      <img src="./images/clients/client-3.png" alt="magic furniture">
+                    </div>
+                    <div class="cert-content">
+                      <h4>Psychology of Internation Design</h4>
+                      <p>Membership ID:XXXX</p>
+                      <P>19 April 2018</P>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="cert-logo"></div>
-                <div class="cert-content">
-                  <h4>Psychology of Internation Design</h4>
-                  <p>Membership ID:XXXX</p>
-                  <P>19 April 2018</P>
+                <div class="col-sm-6">
+                  <div class="cert-wrapper d-flex">
+                    <div class="cert-logo d-flex align-items-center">
+                      <img src="./images/clients/client-4.png" alt="life guard">
+                    </div>
+                    <div class="cert-content">
+                      <h4>Psychology of Internation Design</h4>
+                      <p>Membership ID:XXXX</p>
+                      <P>19 April 2018</P>
+                    </div>
+                  </div>
+                 
                 </div>
               </div>
             </div>

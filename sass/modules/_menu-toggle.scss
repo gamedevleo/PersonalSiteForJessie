@@ -20,17 +20,5 @@
     transition: 0.5s ease-in-out;
     cursor: pointer;
     z-index: 1000;
-    span {
-      display: block;
-      position: absolute;
-      height: 3px;
-      width: 50%;
-      background: white;
-      border-radius: 5px;
-      opacity: 1;
-      left: 25%;
-      transform: rotate(0deg);
-      transition: 0.25s ease-in-out;
-    }
   }
 }

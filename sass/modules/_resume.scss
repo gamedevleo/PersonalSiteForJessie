@@ -1,0 +1,153 @@
+.resume {
+  &-title {
+    margin-bottom: 20px;
+    position: relative;
+    @include dotsDecoration(50%, 10%, 10%, 60%, $color-blue, 0);
+  }
+  .row {
+    margin-bottom: 10px;
+    .resume-timeline {
+      h3 {
+        position: relative;
+        margin-bottom: 20px;
+        margin: 10px 0;
+        font-size: 20px;
+        @include dotsDecoration(50%, 15%, 10%, 60%, $color-blue, 0);
+      }
+      .time-line {
+        min-width: 110px;
+        padding-right: 10px;
+        border-right: 1px solid $color-grey;
+        h4 {
+          position: relative;
+          font-size: 14px;
+          color: $color-grey;
+          text-align: end;
+          white-space: nowrap;
+          &::after {
+            position: absolute;
+            top: 50%;
+            right: -14px;
+            transform: translateY(-50%);
+            width: 7px;
+            height: 7px;
+            content: '';
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            background-color: #000;
+            border: 1px solid $color-blue;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+          }
+          &::before {
+            position: absolute;
+            top: 50%;
+            right: -15.4px;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            content: '';
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            background-color: rgba($color-blue, 0.5);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+          }
+        }
+        p {
+          font-size: 12px;
+          color: $color-grey;
+          text-align: end;
+        }
+      }
+      .subjects,
+      .jobtitle {
+        padding-left: 10px;
+        h4 {
+          font-size: 15px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .skills {
+      h3 {
+        margin: 20px 0;
+        font-size: 20px;
+        span {
+          color: $color-blue;
+          position: relative;
+          @include dotsDecoration(50%, 50%, 80%, 80%, $color-blue, 0);
+        }
+      }
+      .list-group {
+        &-item {
+          background-color: $color-blue;
+          margin: 0 5px 5px 0;
+          padding: 2px 8px;
+          color: white;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+        }
+      }
+      .knowledges {
+        h3 {
+          position: relative;
+          @include dotsDecoration(50%, 34%, 10%, 80%, $color-blue, 0);
+        }
+      }
+    }
+  }
+  .certificate {
+    h3 {
+      margin-bottom: 20px;
+      position: relative;
+      @include dotsDecoration(50%, 18%, 5%, 80%, $color-blue, 0);
+    }
+    .row {
+      .col-sm-6 {
+        .cert-wrapper {
+          border: 1px solid $color-grey;
+          border-radius: 20px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          -o-border-radius: 20px;
+          overflow: hidden;
+        }
+        .cert-logo {
+          background-color: $color-grey;
+          img {
+            vertical-align: middle;
+            max-width: 100px;
+          }
+        }
+        .cert-content {
+          padding: 10px;
+          h4 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 10px;
+            color: $color-grey;
+            margin: 3px;
+          }
+        }
+      }
+    }
+  }
+}

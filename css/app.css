@@ -288,18 +288,6 @@ html body footer {
     cursor: pointer;
     z-index: 1000;
   }
-  .menu-toggle span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 50%;
-    background: white;
-    border-radius: 5px;
-    opacity: 1;
-    left: 25%;
-    transform: rotate(0deg);
-    transition: 0.25s ease-in-out;
-  }
 }
 
 .content-area {
@@ -324,7 +312,7 @@ html body footer {
   height: 100%;
   width: 100%;
   border-radius: 30px;
-  padding: 60px;
+  padding: 40px;
   opacity: 0;
   overflow: auto;
   visibility: hidden;
@@ -740,5 +728,251 @@ html body footer {
 
 .about-me .list-group-item span {
   margin-right: 5px;
+}
+
+.resume-title {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.resume-title::after {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  opacity: 0.4;
+  height: 60%;
+  width: 10%;
+  content: '';
+  background-image: -webkit-repeating-radial-gradient(center center, #04b4e0, #04b4e0 1px, transparent 0px, transparent 100%);
+  background-size: 6px 6px;
+  z-index: -1;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.resume .row {
+  margin-bottom: 10px;
+}
+
+.resume .row .resume-timeline h3 {
+  position: relative;
+  margin-bottom: 20px;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.resume .row .resume-timeline h3::after {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  opacity: 0.4;
+  height: 60%;
+  width: 10%;
+  content: '';
+  background-image: -webkit-repeating-radial-gradient(center center, #04b4e0, #04b4e0 1px, transparent 0px, transparent 100%);
+  background-size: 6px 6px;
+  z-index: -1;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.resume .row .resume-timeline .time-line {
+  min-width: 110px;
+  padding-right: 10px;
+  border-right: 1px solid #b5b6b7;
+}
+
+.resume .row .resume-timeline .time-line h4 {
+  position: relative;
+  font-size: 14px;
+  color: #b5b6b7;
+  text-align: end;
+  white-space: nowrap;
+}
+
+.resume .row .resume-timeline .time-line h4::after {
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+  content: '';
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #000;
+  border: 1px solid #04b4e0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.resume .row .resume-timeline .time-line h4::before {
+  position: absolute;
+  top: 50%;
+  right: -15.4px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: rgba(4, 180, 224, 0.5);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.resume .row .resume-timeline .time-line p {
+  font-size: 12px;
+  color: #b5b6b7;
+  text-align: end;
+}
+
+.resume .row .resume-timeline .subjects,
+.resume .row .resume-timeline .jobtitle {
+  padding-left: 10px;
+}
+
+.resume .row .resume-timeline .subjects h4,
+.resume .row .resume-timeline .jobtitle h4 {
+  font-size: 15px;
+}
+
+.resume .row .resume-timeline .subjects p,
+.resume .row .resume-timeline .jobtitle p {
+  font-size: 12px;
+}
+
+.resume .row .skills h3 {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.resume .row .skills h3 span {
+  color: #04b4e0;
+  position: relative;
+}
+
+.resume .row .skills h3 span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.4;
+  height: 80%;
+  width: 80%;
+  content: '';
+  background-image: -webkit-repeating-radial-gradient(center center, #04b4e0, #04b4e0 1px, transparent 0px, transparent 100%);
+  background-size: 6px 6px;
+  z-index: -1;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.resume .row .skills .list-group-item {
+  background-color: #04b4e0;
+  margin: 0 5px 5px 0;
+  padding: 2px 8px;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.resume .row .skills .knowledges h3 {
+  position: relative;
+}
+
+.resume .row .skills .knowledges h3::after {
+  position: absolute;
+  top: 50%;
+  left: 34%;
+  opacity: 0.4;
+  height: 80%;
+  width: 10%;
+  content: '';
+  background-image: -webkit-repeating-radial-gradient(center center, #04b4e0, #04b4e0 1px, transparent 0px, transparent 100%);
+  background-size: 6px 6px;
+  z-index: -1;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.resume .certificate h3 {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.resume .certificate h3::after {
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  opacity: 0.4;
+  height: 80%;
+  width: 5%;
+  content: '';
+  background-image: -webkit-repeating-radial-gradient(center center, #04b4e0, #04b4e0 1px, transparent 0px, transparent 100%);
+  background-size: 6px 6px;
+  z-index: -1;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.resume .certificate .row .col-sm-6 .cert-wrapper {
+  border: 1px solid #b5b6b7;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+}
+
+.resume .certificate .row .col-sm-6 .cert-logo {
+  background-color: #b5b6b7;
+}
+
+.resume .certificate .row .col-sm-6 .cert-logo img {
+  vertical-align: middle;
+  max-width: 100px;
+}
+
+.resume .certificate .row .col-sm-6 .cert-content {
+  padding: 10px;
+}
+
+.resume .certificate .row .col-sm-6 .cert-content h4 {
+  font-size: 15px;
+}
+
+.resume .certificate .row .col-sm-6 .cert-content p {
+  font-size: 10px;
+  color: #b5b6b7;
+  margin: 3px;
 }
 /*# sourceMappingURL=app.css.map */
