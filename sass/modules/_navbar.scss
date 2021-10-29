@@ -12,6 +12,9 @@
       border: none;
     }
   }
+  .active-item {
+    color: $color-blue;
+  }
 }
 .bs-tooltip-start .tooltip-arrow::before {
   border-left-color: #04b4e0;
