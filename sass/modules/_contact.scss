@@ -1,0 +1,172 @@
+.contact {
+  padding: 5px;
+  h2 {
+    margin-bottom: 20px;
+    position: relative;
+    @include dotsDecoration(50%, 12%, 8%, 80%, $color-blue, 0);
+  }
+  &-infos {
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #444;
+      border: 1px solid #666;
+      margin-bottom: 10px;
+      padding: 10px 0;
+      i {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: $color-blue;
+      }
+      h4 {
+        font-size: 15px;
+        font-weight: 800;
+      }
+    }
+  }
+  .row.map {
+    height: 100px;
+    padding: 0 12px 0 12px;
+    #map {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      overflow: hidden;
+    }
+  }
+  h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    span {
+      position: relative;
+      color: $color-blue;
+      @include dotsDecoration(50%, 80%, 30%, 50%, $color-blue, 0);
+    }
+  }
+  form {
+    .row {
+      padding-right: 12px;
+    }
+    .input-wrapper {
+      position: relative;
+      height: 30px;
+      margin-bottom: 20px;
+      &:focus-within .brush {
+        &::after {
+          animation-name: brush;
+          animation-duration: 0.2s;
+        }
+      }
+      input {
+        position: relative;
+        background-color: transparent;
+        border: 1px solid $color-grey;
+        outline: none;
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+      input:focus {
+        border: 1px solid $color-blue;
+        & ~ label {
+          font-size: 12px;
+          top: -18px;
+          left: 0;
+          color: $color-blue;
+        }
+      }
+      label {
+        position: absolute;
+        top: 5px;
+        left: 8px;
+        color: $color-grey;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+      }
+      span {
+        display: none;
+      }
+      .brush {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1px;
+          height: 100%;
+          background-color: $color-blue;
+          visibility: hidden;
+        }
+      }
+    }
+    .textarea-wrapper {
+      position: relative;
+      padding: 0;
+      textarea {
+        width: 100%;
+        height: auto;
+        min-height: 85%;
+        margin-bottom: 10px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid $color-grey;
+        outline: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        &:focus {
+          border: 1px solid $color-blue;
+          & ~ label {
+            font-size: 12px;
+            top: -18px;
+            left: 0;
+            color: $color-blue;
+          }
+        }
+      }
+      label {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        color: $color-grey;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+@keyframes brush {
+  0% {
+    visibility: hidden;
+    left: 0;
+  }
+  100% {
+    visibility: visible;
+    left: 100%;
+  }
+}

@@ -28,4 +28,96 @@ $(document).ready(()=>{
     })
   })
 })
+//Section switch by navbar
+const animations = [
+  'animate__backInDown',
+  'animate__bounceInUp',
+  'animate__bounceInLeft',
+  'animate__bounceInRight',
+  'animate__flipInX',
+  'animate__flipInY',
+  'animate__rotateIn',
+  'animate__rotateInDownLeft',
+  'animate__rotateInDownRight',
+  'animate__rotateInUpLeft',
+  'animate__rollIn',
+  'animate__jackInTheBox',
+  'animate__zoomIn',
+  'animate__zoomInRight',
+  'animate__slideInLeft'
+];
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+$('nav ul li a').each(function(i){
+  $(this).on('click',()=>{
+    $('nav ul li a').each(function()
+    {
+      $(this).removeClass('active-item');
+    })
+    $(this).addClass('active-item');
+    $('section').each(function(index){
+      $(this).removeClass('section-active');
+      if(i === index){
+        let classNames = $(this).attr("class").split(/\s+/);
+        classNames.forEach(className => {
+          if(animations.includes(className)) $(this).removeClass(className);          
+        });
+        let random = getRandomInt(0,animations.length-1);
+        $(this).addClass(`section-active ${animations[random]}`);
+      }
+    })
+  })
+})
+//section switch by arrows
+$('.arrow-right').on('click',()=>{
+  let currentIndex = null;
+  $('nav ul li a').each(function(i){ 
+    let className = $(this).attr('class');
+    if(className === 'active-item')
+    {
+      currentIndex = (i+1)%6;
+      $(this).removeClass('active-item');
+    }
+  })
+  $('nav ul li a').eq(currentIndex).addClass('active-item');
+  $('section').each(function(index){
+    $(this).removeClass('section-active');
+    if(currentIndex === index){
+      let classNames = $(this).attr("class").split(/\s+/);
+      classNames.forEach(className => {
+        if(animations.includes(className)) $(this).removeClass(className);          
+      });
+      let random = getRandomInt(0,animations.length-1);
+      $(this).addClass(`section-active ${animations[random]}`);
+    }
+  })
+})
+$('.arrow-left').on('click',()=>{
+  let currentIndex = null;
+  $('nav ul li a').each(function(i){ 
+    let className = $(this).attr('class');
+    if(className === 'active-item')
+    {
+      currentIndex = i-1;
+      currentIndex === -1 ? currentIndex = 5 : currentIndex;
+      $(this).removeClass('active-item');
+    }
+  })
+  $('nav ul li a').eq(currentIndex).addClass('active-item');
+  $('section').each(function(index){
+    $(this).removeClass('section-active');
+    if(currentIndex === index){
+      let classNames = $(this).attr("class").split(/\s+/);
+      classNames.forEach(className => {
+        if(animations.includes(className)) $(this).removeClass(className);          
+      });
+      let random = getRandomInt(0,animations.length-1);
+      $(this).addClass(`section-active ${animations[random]}`);
+    }
+  })
+})
+
 
