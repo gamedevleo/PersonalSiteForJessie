@@ -461,8 +461,16 @@ html body footer {
 .about-me-testimonials h3::after {
   position: absolute;
   top: 50%;
+<<<<<<< HEAD
   left: 20%;
   opacity: 0.5;
+||||||| ecae0dd
+  left: 80%;
+  opacity: 0.4;
+=======
+  left: 80%;
+  opacity: 0.5;
+>>>>>>> ea47ac7485385db7f2aad015605c5bd13bda2bfd
   height: 60%;
   width: 12%;
   content: '';
@@ -565,8 +573,16 @@ html body footer {
 .about-me-clients-header h3::after {
   position: absolute;
   top: 50%;
+<<<<<<< HEAD
   left: 10%;
   opacity: 0.5;
+||||||| ecae0dd
+  left: 80%;
+  opacity: 0.4;
+=======
+  left: 80%;
+  opacity: 0.5;
+>>>>>>> ea47ac7485385db7f2aad015605c5bd13bda2bfd
   height: 50%;
   width: 10%;
   content: '';
