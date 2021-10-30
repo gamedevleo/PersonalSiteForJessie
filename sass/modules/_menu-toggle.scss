@@ -12,6 +12,7 @@
     line-height: 46px;
     text-align: center;
     background-color: $color-blue;
+    color: white;
     right: 10px;
     font-size: 19px;
     top: 10px;
@@ -20,5 +21,8 @@
     transition: 0.5s ease-in-out;
     cursor: pointer;
     z-index: 1000;
+    i:hover {
+      color: white;
+    }
   }
 }

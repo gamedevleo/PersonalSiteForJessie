@@ -75,6 +75,7 @@ html body footer {
 @media only screen and (max-width: 992px) {
   .page {
     padding: 0;
+    height: 100vh;
   }
   .page-content {
     padding: 0;
@@ -82,6 +83,11 @@ html body footer {
     border-radius: 0;
     min-height: 100%;
   }
+}
+
+.animate__animated.animate__slideInRight,
+.animate__animated.animate__slideOutRight {
+  --animate-duration: 0.2s;
 }
 
 .site-header {
@@ -283,6 +289,7 @@ html body footer {
     line-height: 46px;
     text-align: center;
     background-color: #04b4e0;
+    color: white;
     right: 10px;
     font-size: 19px;
     top: 10px;
@@ -291,6 +298,9 @@ html body footer {
     transition: 0.5s ease-in-out;
     cursor: pointer;
     z-index: 1000;
+  }
+  .menu-toggle i:hover {
+    color: white;
   }
 }
 
@@ -303,9 +313,19 @@ html body footer {
   background-color: transparent;
 }
 
+.content-area .container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.content-area .container::-webkit-scrollbar {
+  display: none;
+}
+
 .content-area .animated-sections {
   position: relative;
   height: 100%;
+  width: 100%;
   perspective: 1500px;
   backface-visibility: hidden;
 }
@@ -355,6 +375,15 @@ html body footer {
   opacity: 1;
   visibility: visible;
   z-index: 99;
+}
+
+@media only screen and (max-width: 992px) {
+  .content-area {
+    max-width: 100%;
+  }
+  .container {
+    max-width: 100%;
+  }
 }
 
 .about-me-header h2 {
@@ -420,6 +449,10 @@ html body footer {
   margin-bottom: 10px;
 }
 
+.about-me-testimonials {
+  margin-bottom: 50px;
+}
+
 .about-me-testimonials h3 {
   position: relative;
   margin-bottom: 20px;
@@ -428,10 +461,10 @@ html body footer {
 .about-me-testimonials h3::after {
   position: absolute;
   top: 50%;
-  left: 80%;
+  left: 20%;
   opacity: 0.5;
   height: 60%;
-  width: 30%;
+  width: 12%;
   content: '';
   background-image: -webkit-repeating-radial-gradient(center center, #04b4e0, #04b4e0 1px, transparent 0px, transparent 100%);
   background-size: 6px 6px;
@@ -448,42 +481,18 @@ html body footer {
   justify-content: space-between;
 }
 
-.about-me-testimonials button {
-  color: white;
-  background-color: #444;
-  border: none;
-  border-radius: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  font-size: 1rem;
-  padding: 0.3rem;
-  box-shadow: 0 0 2px #ccc;
-}
-
-.about-me-testimonials button:hover {
-  background-color: #04b4e0;
-}
-
-.about-me-testimonials-content {
-  padding: 20px 0;
-  white-space: nowrap;
-  -ms-scrollbar: none;
-  scrollbar-width: none;
-  scroll-snap-type: x mandatory;
-}
-
-.about-me-testimonials-content::-webkit-scrollbar {
-  display: none;
-}
-
 .about-me-testimonials-content .card {
-  scroll-snap-align: start;
   position: relative;
   display: inline-block;
   margin-top: 3rem;
-  width: 49.5%;
+  width: 100%;
   height: 100%;
   background-color: transparent;
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
 }
 
 .about-me-testimonials-content .card .card-img-top {
@@ -491,8 +500,12 @@ html body footer {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   border-radius: 50%;
-  width: 30%;
+  width: 25%;
 }
 
 .about-me-testimonials-content .card .card-body {
@@ -503,6 +516,42 @@ html body footer {
 
 .about-me-testimonials-content .card .card-text {
   white-space: normal;
+}
+
+.about-me-testimonials-content .owl-carousel {
+  position: relative;
+}
+
+.about-me-testimonials-content .owl-carousel .owl-nav {
+  position: absolute;
+  margin: 0;
+  top: -60px;
+  right: 0;
+}
+
+.about-me-testimonials-content .owl-carousel .owl-nav button {
+  border: 1px solid #444;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.about-me-testimonials-content .owl-carousel .owl-nav button:hover {
+  background-color: #04b4e0;
+}
+
+.about-me-testimonials-content .owl-carousel .owl-nav button span {
+  font-size: 30px;
+  position: relative;
+  bottom: 6px;
+}
+
+.about-me-testimonials-content .owl-dots {
+  display: none;
 }
 
 .about-me-clients-header {
@@ -516,10 +565,10 @@ html body footer {
 .about-me-clients-header h3::after {
   position: absolute;
   top: 50%;
-  left: 80%;
+  left: 10%;
   opacity: 0.5;
   height: 50%;
-  width: 40%;
+  width: 10%;
   content: '';
   background-image: -webkit-repeating-radial-gradient(center center, #04b4e0, #04b4e0 1px, transparent 0px, transparent 100%);
   background-size: 6px 6px;
@@ -531,46 +580,49 @@ html body footer {
   -o-border-radius: 0;
 }
 
-.about-me-clients-header button {
-  margin: 0.2rem;
-  color: #fff;
-  background-color: #444;
-  border: none;
-  border-radius: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  font-size: 1rem;
-  padding: 0.3rem;
-  box-shadow: 0 0 2px #ccc;
+.about-me-clients .img-wrapper {
+  width: 100%;
 }
 
-.about-me-clients-header button:hover {
+.about-me-clients .img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-me-clients .owl-carousel {
+  position: relative;
+}
+
+.about-me-clients .owl-carousel .owl-nav {
+  position: absolute;
+  margin: 0;
+  top: -60px;
+  right: 0;
+}
+
+.about-me-clients .owl-carousel .owl-nav button {
+  border: 1px solid #444;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.about-me-clients .owl-carousel .owl-nav button:hover {
   background-color: #04b4e0;
 }
 
-.about-me-clients-content {
-  scroll-snap-type: x mandatory;
-  white-space: nowrap;
-  width: 100%;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.about-me-clients-content::-webkit-scrollbar {
-  display: none;
-}
-
-.about-me-clients-content .img-wrapper {
+.about-me-clients .owl-carousel .owl-nav button span {
+  font-size: 30px;
   position: relative;
-  width: 20%;
-  display: inline-block;
-  scroll-snap-align: start;
-  padding: 0 0.5rem;
+  bottom: 6px;
 }
 
-.about-me-clients-content .img-wrapper img {
-  width: 100%;
-  height: 100%;
+.about-me-clients .owl-dots {
+  display: none;
 }
 
 .about-me-pricing {
@@ -703,6 +755,10 @@ html body footer {
   border: 1px solid #ccc;
   border-radius: 1rem;
   transition: transform 500ms;
+  -webkit-transition: transform 500ms;
+  -moz-transition: transform 500ms;
+  -ms-transition: transform 500ms;
+  -o-transition: transform 500ms;
 }
 
 .about-me-funFacts-content .card:hover {

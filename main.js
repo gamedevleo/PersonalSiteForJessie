@@ -119,5 +119,47 @@ $('.arrow-left').on('click',()=>{
     }
   })
 })
+//Carousel 
+$('.about-me-testimonials .owl-carousel').owlCarousel({
+  loop:false,
+  nav:true,
+  margin:10,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      }
+  }
+})
+$('.about-me-clients .owl-carousel').owlCarousel({
+  loop:true,
+  nav:true,
+  margin:10,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:5
+      }
+  }
+})
+//Menu toggle
+$(window).resize(function() {
+  if($(window).width() <= 992){
+    $(".site-header").addClass('animate__slideOutRight');
+  }
+  else{
+    $(".site-header").removeClass('animate__slideOutRight');
+  }
+}).resize();
+if($(window).width() <= 992){
+  $(".menu-toggle").on('click',()=>{
+    $(".menu-toggle > i").toggleClass("lnr-menu lnr-cross");
+    $('.site-header').toggleClass("animate__slideInRight animate__slideOutRight");
+  })
+}
 
 

@@ -5,9 +5,17 @@
   height: 100%;
   max-width: calc(100% - 380px);
   background-color: transparent;
+  .container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
   .animated-sections {
     position: relative;
     height: 100%;
+    width: 100%;
     perspective: 1500px;
     backface-visibility: hidden;
     .animated-section {
@@ -51,5 +59,14 @@
       visibility: visible;
       z-index: 99;
     }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .content-area {
+    max-width: 100%;
+  }
+  .container {
+    max-width: 100%;
   }
 }

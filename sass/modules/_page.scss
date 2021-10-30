@@ -22,10 +22,10 @@
     padding-left: 30px;
   }
 }
-
 @media only screen and (max-width: 992px) {
   .page {
     padding: 0;
+    height: 100vh;
     &-content {
       padding: 0;
       margin: 0;

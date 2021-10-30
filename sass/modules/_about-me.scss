@@ -29,53 +29,40 @@
     }
   }
   &-testimonials {
+    margin-bottom: 50px;
     h3 {
       position: relative;
-      @include dotsDecoration(50%, 80%, 30%, 60%, $color-blue, 0);
+      @include dotsDecoration(50%, 20%, 12%, 60%, $color-blue, 0);
       margin-bottom: 20px;
     }
     .col-lg-2 {
       display: flex;
       justify-content: space-between;
     }
-    button {
-      color: white;
-      background-color: $bg-color-grey;
-      border: none;
-      border-radius: 0.5rem;
-      width: 2rem;
-      height: 2rem;
-      font-size: 1rem;
-      padding: 0.3rem;
-      box-shadow: 0 0 2px #ccc;
-      &:hover {
-        background-color: $color-blue;
-      }
-    }
     &-content {
-      padding: 20px 0;
-      white-space: nowrap;
-      -ms-scrollbar: none;
-      scrollbar-width: none;
-      scroll-snap-type: x mandatory;
-      &::-webkit-scrollbar {
-        display: none;
-      }
       .card {
-        scroll-snap-align: start;
         position: relative;
         display: inline-block;
         margin-top: 3rem;
-        width: 49.5%;
+        width: 100%;
         height: 100%;
         background-color: transparent;
+        transition: transform 0.3s ease-in-out;
+        -webkit-transition: transform 0.3s ease-in-out;
+        -moz-transition: transform 0.3s ease-in-out;
+        -ms-transition: transform 0.3s ease-in-out;
+        -o-transition: transform 0.3s ease-in-out;
         .card-img-top {
           position: absolute;
           top: 0;
           left: 50%;
           transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
           border-radius: 50%;
-          width: 30%;
+          width: 25%;
         }
         .card-body {
           padding-top: 3rem;
@@ -86,6 +73,36 @@
           white-space: normal;
         }
       }
+      .owl-carousel {
+        position: relative;
+        .owl-nav {
+          position: absolute;
+          margin: 0;
+          top: -60px;
+          right: 0;
+          button {
+            border: 1px solid #444;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            &:hover {
+              background-color: $color-blue;
+            }
+            span {
+              font-size: 30px;
+              position: relative;
+              bottom: 6px;
+            }
+          }
+        }
+      }
+      .owl-dots {
+        display: none;
+      }
     }
   }
   &-clients {
@@ -93,44 +110,45 @@
       margin-bottom: 2rem;
       h3 {
         position: relative;
-        @include dotsDecoration(50%, 80%, 40%, 50%, #04b4e0, 0);
+        @include dotsDecoration(50%, 10%, 10%, 50%, #04b4e0, 0);
       }
-      button {
-        margin: 0.2rem;
-        color: #fff;
-        background-color: #444;
-        border: none;
-        border-radius: 0.5rem;
-        width: 2rem;
-        height: 2rem;
-        font-size: 1rem;
-        padding: 0.3rem;
-        box-shadow: 0 0 2px #ccc;
-        &:hover {
-          background-color: #04b4e0;
+    }
+    .img-wrapper {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .owl-carousel {
+      position: relative;
+      .owl-nav {
+        position: absolute;
+        margin: 0;
+        top: -60px;
+        right: 0;
+        button {
+          border: 1px solid #444;
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          &:hover {
+            background-color: $color-blue;
+          }
+          span {
+            font-size: 30px;
+            position: relative;
+            bottom: 6px;
+          }
         }
       }
     }
-    &-content {
-      scroll-snap-type: x mandatory;
-      white-space: nowrap;
-      width: 100%;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-      &::-webkit-scrollbar {
-        display: none;
-      }
-      .img-wrapper {
-        position: relative;
-        width: 20%;
-        display: inline-block;
-        scroll-snap-align: start;
-        padding: 0 0.5rem;
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
+    .owl-dots {
+      display: none;
     }
   }
   &-pricing {
@@ -216,6 +234,10 @@
         border: 1px solid #ccc;
         border-radius: 1rem;
         transition: transform 500ms;
+        -webkit-transition: transform 500ms;
+        -moz-transition: transform 500ms;
+        -ms-transition: transform 500ms;
+        -o-transition: transform 500ms;
         &:hover {
           transform: translateY(-2%);
         }
